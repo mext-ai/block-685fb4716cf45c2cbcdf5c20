@@ -1,6 +1,5 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { ModuleFederationPlugin } = require('webpack').container;
 const fs = require('fs');
 
@@ -42,20 +41,6 @@ module.exports = {
       // CRITICAL: Empty object = no shared dependencies, full isolation
       shared: {},
     }),
-    // Copy public assets if public folder exists
-    ...(fs.existsSync(path.resolve(__dirname, 'public')) ? [
-      new CopyWebpackPlugin({
-        patterns: [
-          {
-            from: path.resolve(__dirname, 'public'),
-            to: path.resolve(__dirname, 'dist'),
-            globOptions: {
-              ignore: ['**/index.html'], // Don't copy index.html from public
-            },
-          },
-        ],
-      })
-    ] : []),
   ],
   externals: {},
   optimization: {
