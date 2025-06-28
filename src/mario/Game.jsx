@@ -6,8 +6,6 @@ import { Environment, KeyboardControls, Loader, OrbitControls, Preload, Stats } 
 import { insertCoin, onPlayerJoin } from 'playroomkit'
 import { useStore } from "./components/store";
 import * as THREE from "three";
-import { ParisBis } from './components/models/tracks/Paris-bis'
-import "./index.css";
 
 export const Controls = {
   up: 'up',
@@ -19,7 +17,7 @@ export const Controls = {
   slow: 'slow',
   reset: 'reset'
 }
-function Game() {
+function App() {
   const map = useMemo(
     () => [
       { name: Controls.up, keys: ['KeyW', 'ArrowUp'] },
@@ -83,4 +81,4 @@ function Game() {
   )
 }
 
-export default Game
+export default App

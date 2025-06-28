@@ -33,6 +33,7 @@ export const PlayerControllerKeyboard = ({
   networkBananas,
   networkShells,
 }) => {
+  
   const upPressed = useKeyboardControls((state) => state[Controls.up]);
   const downPressed = useKeyboardControls((state) => state[Controls.down]);
   const leftPressed = useKeyboardControls((state) => state[Controls.left]);
@@ -482,6 +483,17 @@ export const PlayerControllerKeyboard = ({
             setIsOnGround(false);
           }}
         />
+        {/* Collision Visualization - More robust approach */}
+        <mesh>
+          <sphereGeometry args={[0.5, 16, 16]} />
+          <meshBasicMaterial 
+            color={0x00ff00} 
+            wireframe={false}
+            transparent={true}
+            opacity={0.7}
+            side={THREE.DoubleSide}
+          />
+        </mesh>
       </RigidBody>
 
       <group ref={kart} rotation={[0, Math.PI / 2, 0]}>

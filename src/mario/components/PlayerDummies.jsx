@@ -32,6 +32,7 @@ import { isHost } from "playroomkit";
 import { Banana } from "./models/items/Banana_peel_mario_kart";
 
 export const PlayerDummies = ( { player, userPlayer }) => {
+  
   const upPressed = useKeyboardControls((state) => state[Controls.up]);
   const downPressed = useKeyboardControls((state) => state[Controls.down]);
   const leftPressed = useKeyboardControls((state) => state[Controls.left]);

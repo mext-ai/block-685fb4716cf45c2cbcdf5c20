@@ -5,13 +5,13 @@
     "preview": "webpack serve --config webpack.config.js --mode production"
   },
   "dependencies": {
-    "peerjs": "^1.5.5",
+    "@dimforge/rapier3d-compat": "^0.17.3",
     "@react-three/drei": "^9.96.4",
     "@react-three/fiber": "^8.15.15",
     "@react-three/postprocessing": "^2.15.11",
-    "@react-three/rapier": "^1.2.1",
     "gsap": "^3.12.5",
     "leva": "^0.9.35",
+    "peerjs": "^1.5.5",
     "playroomkit": "^0.0.66",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

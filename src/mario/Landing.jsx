@@ -42,7 +42,10 @@ export const Landing = () => {
     return null; 
   }
   return (
-    <>
+    <div style={{
+      width: '100%',
+      height: '100%',
+    }}>
       {setupStatus === 0 && (
         <div className="home" ref={homeRef}>
           <div className="logo">
@@ -98,7 +101,7 @@ export const Landing = () => {
           </div>
         </div>
       )}
-    </>
+    </div>
 
   );
 };

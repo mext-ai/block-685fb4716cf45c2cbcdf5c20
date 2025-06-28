@@ -33,6 +33,7 @@ export const PlayerController = ({
   networkBananas,
   networkShells,
 }) => {
+  
   const upPressed = useKeyboardControls((state) => state[Controls.up]);
   const downPressed = useKeyboardControls((state) => state[Controls.down]);
   const leftPressed = useKeyboardControls((state) => state[Controls.left]);
@@ -494,6 +495,7 @@ export const PlayerController = ({
             setIsOnGround(false);
           }}
         />
+        
       </RigidBody>
 
       <group ref={kart} rotation={[0, Math.PI / 2, 0]}>
