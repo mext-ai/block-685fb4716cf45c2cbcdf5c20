@@ -15,14 +15,7 @@ const Block: React.FC<BlockProps> = () => {
       margin: 0,
       color: 'white'
     }}>
-      <h1 style={{
-        fontSize: '3rem',
-        textAlign: 'center',
-        textShadow: '2px 2px 4px rgba(0,0,0,0.3)',
-        margin: 0
-      }}>
-        Hi there, I'm an empty block ✨
-      </h1>
+     <img src="/mext.png" alt="mext" />
     </div>
   );
 };
