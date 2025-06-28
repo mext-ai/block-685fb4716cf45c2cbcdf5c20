@@ -7,6 +7,7 @@ import { insertCoin, onPlayerJoin } from 'playroomkit'
 import { useStore } from "./components/store";
 import * as THREE from "three";
 import { ParisBis } from './components/models/tracks/Paris-bis'
+import "./index.css";
 
 export const Controls = {
   up: 'up',
