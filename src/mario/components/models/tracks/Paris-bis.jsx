@@ -4,7 +4,7 @@ import { useGLTF } from '@react-three/drei'
 import { RigidBody } from '@react-three/rapier'
 
 export function ParisBis(props) {
-  const { nodes, materials } = useGLTF('https://content.mext.app/uploads/paris.glb')
+  const { nodes, materials } = useGLTF('https://content.mext.app/uploads/paris-track.glb')
   materials.M_Cmn_ShadowCollision.opacity = 0
   materials.M_Cmn_ShadowCollision.transparent = true
   return (
@@ -102,4 +102,4 @@ export function ParisBis(props) {
   )
 }
 
-useGLTF.preload('https://content.mext.app/uploads/paris.glb')
+useGLTF.preload('https://content.mext.app/uploads/paris-track.glb')
