@@ -6,7 +6,7 @@ import { Environment, KeyboardControls, Loader, OrbitControls, Preload, Stats } 
 import { insertCoin, onPlayerJoin } from 'playroomkit'
 import { useStore } from "./components/store";
 import * as THREE from "three";
-
+import './index.css';
 export const Controls = {
   up: 'up',
   down: 'down',
